@@ -87,11 +87,29 @@ function potencia(){
 }//fim do método
 
 function raizQuadrada(){
-    var num;
-    var raiz;
+    var num1;
+    var num2;
+    
+    num1 = parseInt(document.getElementById("tpNum").value);
+    num2 = parseInt(document.getElementById("tsNum").value);
 
-    num = parseInt(document.getElementById("tpNum").value);
-    raiz = parseInt(document.getElementById("tsNum").value);
+    //Realizando a raiz dos números
 
-    //Realizando a raiz do número
+    document.getElementById("resultado").value= "\n\nA raíz de: " + num1 + "é:" + Math.sqrt(num1)
+    + "\n\nA raíz de" + num2 + "é:" + Math.sqrt(num2);
+}
+
+function numeros(){
+    var num1;
+    var seguinte = 0;
+
+    if(num1=true){
+        for(var i=0; i<10; i++){
+        num1 = parseInt(document.getElementById("tpNum").value);
+        seguinte += (num1 + i) + `, ` 
+        }
+    seguinte += (num1 + i);
+    }
+
+    document.getElementById("resultado").innerHTML = seguinte;
 }
