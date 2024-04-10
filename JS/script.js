@@ -113,3 +113,49 @@ function numeros(){
 
     document.getElementById("resultado").innerHTML = seguinte;
 }
+
+function numerosPares(){
+    var res = "Pares de 1 a 20:"
+
+        for(i=1; i<21; i++){
+            if(i % 2 == 0){
+                res += "\n" + i;
+            }
+        }
+
+    document.getElementById("resultado").value = "\n" + res;
+}
+
+function somarCem(){
+    var soma = 0;
+
+    for(i=1; i<=100; i++){
+        soma += i;
+    }
+    document.getElementById("resultado").value = "\n" + soma;
+}
+
+function somarCinco(){
+    var res = "Multiplos de 5, de 1 a 50:"
+
+        for(i=5; i<=50; i++){
+            if(i % 5 == 0){
+                res += "\n" + i;
+            }
+        }
+
+    document.getElementById("resultado").value = "\n" + res;
+}
+
+function numeroDig(){
+    var num1;
+    var res;
+    
+    for(i=1; i<num1; i++){
+        num1 = document.getElementById("tpNum").value;
+        if(i = num){        
+           i++;
+        }
+    }
+    document.getElementById("resultado").value = "\n" + res;
+}
